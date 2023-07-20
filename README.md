@@ -25,28 +25,29 @@ Please note that this script should be used responsibly and in compliance with t
 
 1. Install the required Python packages: `beautifulsoup4` and `requests`.
 
-```pip install beautifulsoup4 requests```
+``` pip install beautifulsoup4 requests ```
 
 2. Install the `feh` image viewer on your Linux machine.
 
-```sudo pacman -S feh # For Arch Linux```
+``` sudo pacman -S feh # For Arch Linux ```
 
 3. Clone this repository and navigate to the project directory.
 
-```git clone https://github.com/yourusername/artwork_scraper.git
-cd artwork_scraper```
+``` git clone https://github.com/yourusername/artwork_scraper.git ```
+
+```cd artwork_scraper ```
 
 4. Run the Python script to start downloading the artwork.
 
-```python scraper.py```
+``` python scraper.py ```
 
 5. After the artwork has been downloaded to the "artwork" directory, run the Bash script to periodically change the desktop background. Adjust the frequency as desired.
 
-```crontab -e```
+``` crontab -e ```
 
 Add the following line to the crontab (update every hour):
 
-```0 * * * * /path/to/your/update_background.sh```
+``` 0 * * * * /path/to/your/update_background.sh ```
 
 6. Enjoy the visually appealing artwork rotating on your Linux desktop background!
 
