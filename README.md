@@ -1,6 +1,6 @@
 # Artwork Scraper for Linux Desktop Backgrounds
 
-![Desktop Background](https://example.com/desktop_background.jpg)
+![Desktop Background](/bookworm-cartl-spitzweg-milwaukee-version_68fb5fe5.jpg)
 
 ## Purpose
 
