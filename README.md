@@ -19,8 +19,6 @@ This Python script is designed to procure artwork from web pages hosted on "http
 
 It is essential to emphasize that this script is intended solely for visual appreciation and desktop background rotation. The primary goal is to showcase and appreciate the artwork available on "https://eternalisedofficial.com" as part of the Linux desktop environment. There are no intentions to misuse or redistribute the artwork for any other purpose.
 
-Please note that this script should be used responsibly and in compliance with the terms of use set by "https://eternalisedofficial.com". Be considerate of the website's resources and avoid any actions that may cause harm or disruption to their services.
-
 ## How to Use
 
 1. Install the required Python packages: `beautifulsoup4` and `requests`.
