@@ -4,7 +4,7 @@
 
 ## Purpose
 
-This Python script is designed to procure artwork from web pages hosted on "https://eternalisedofficial.com" to be used as visually appealing desktop backgrounds in a Linux environment. The script scrapes web pages containing artwork images and downloads them to a local directory. The artwork can then be fed into a Bash script that periodically changes the desktop background, providing users with a refreshing and dynamic visual experience.
+This Python script is designed to procure artwork from web pages hosted on "https://eternalisedofficial.com" to be used as visually appealing and thought provoking desktop backgrounds in a Linux environment. The script scrapes web pages containing artwork images and downloads them to a local directory. The artwork can then be fed into a Bash script that periodically changes the desktop background, providing users with a refreshing and dynamic visual experience.
 
 ## Features
 
