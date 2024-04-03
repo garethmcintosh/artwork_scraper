@@ -43,3 +43,5 @@ $Prefix = Get-Location
 $ResizedImagePath = $ResizedImage.Replace('.\', '\artwork\')
 $ResizedImagePath = Join-Path -Path $Prefix -ChildPath $ResizedImage
 [Wallpaper]::SystemParametersInfo(20, 0, $ResizedImagePath, 3)
+
+Remove-Item -Path ".\temp\*" -Recurse -Force
