@@ -11,7 +11,7 @@ def clean_filename(title):
     # Remove any special characters from the title
     cleaned_title = re.sub(r'[^\w\s-]', '', title)
     # Replace spaces with underscores and convert to lowercase
-    return cleaned_title.strip().replace(' ', '_').replace('\n', '_').lower()
+    return cleaned_title.strip().replace(' ', '-').replace('\n', '-').lower()
 
 def download_image(image_url, save_path):
     headers = {
@@ -42,7 +42,7 @@ def scrape_page(page_url):
                     downloaded_urls.add(image_url)
                     image_title = figure.find('img')['data-image-title']
                     cleaned_title = clean_filename(image_title)
-                    image_filename = f"{cleaned_title}_{uuid.uuid4().hex[:8]}.jpg"
+                    image_filename = f"{cleaned_title}.jpg"
                     download_path = os.path.join('artwork', image_filename)
                     download_image(image_url, download_path)
                     time.sleep(2)  # Introduce a 2-second delay between requests

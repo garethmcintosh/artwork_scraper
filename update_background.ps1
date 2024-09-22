@@ -13,9 +13,8 @@ if ($null -eq $RandomImage) {
 }
 
 $ScreenResolution = "1920x1080"
-
-$TimeStamp = Get-Date -Format "yyyyMMddHHmmss"
-$ResizedImage = ".\temp\resized_image_$TimeStamp.jpg"
+$ArtworkName = $RandomImage.Name
+$ResizedImage = ".\temp\$ArtworkName"
 
 magick convert "$($RandomImage.FullName)" -resize "$ScreenResolution>" "$ResizedImage"
 
