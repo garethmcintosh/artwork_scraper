@@ -8,9 +8,7 @@ from bs4 import BeautifulSoup
 downloaded_urls = set()
 
 def clean_filename(title):
-    # Remove any special characters from the title
     cleaned_title = re.sub(r'[^\w\s-]', '', title)
-    # Replace spaces with underscores and convert to lowercase
     return cleaned_title.strip().replace(' ', '-').replace('\n', '-').lower()
 
 def download_image(image_url, save_path):
@@ -45,7 +43,7 @@ def scrape_page(page_url):
                     image_filename = f"{cleaned_title}.jpg"
                     download_path = os.path.join('artwork', image_filename)
                     download_image(image_url, download_path)
-                    time.sleep(2)  # Introduce a 2-second delay between requests
+                    time.sleep(2)
 
 if __name__ == "__main__":
     base_url = "https://eternalisedofficial.com/latest-posts/"
@@ -56,7 +54,6 @@ if __name__ == "__main__":
         if not os.path.exists('artwork'):
             os.makedirs('artwork')
             
-        # clear the artwork folder
         for file in os.listdir('artwork'):
             os.remove(os.path.join('artwork', file))
 
