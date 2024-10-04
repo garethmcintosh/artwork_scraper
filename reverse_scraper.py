@@ -37,7 +37,6 @@ def get_wallpaper(monitor=0):
             except subprocess.CalledProcessError:
                 print("Error getting XFCE wallpaper")
                 return None
-        # Add checks for other Linux desktop environments here if needed
         else:
             print("Unsupported Linux desktop environment")
             return None
@@ -92,7 +91,7 @@ def main():
                         print(f"Found a match: {page_url}")
                         break
         else:
-            print("Failed to retrieve the artwork.")
+            print("Failed to retrieve the artwork")
 
 if __name__ == "__main__":
     main()
